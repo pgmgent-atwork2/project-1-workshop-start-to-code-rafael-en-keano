@@ -1,3 +1,13 @@
-.title {
-   
+.title {   
+   font-size: var(--font-size-md);
+}
+
+.title--center { 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.title--big { 
+   font-size: var(--font-size-lg);
 }
