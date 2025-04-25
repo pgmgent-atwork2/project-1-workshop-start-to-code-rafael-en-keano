@@ -61,5 +61,23 @@ function initCalculator() {
       clearNumber();
    })
 
+   document.addEventListener('keydown', (event) => {
+      const key = event.key;
+
+      if (!isNaN(key)) {
+         displayOnCalculator(key);
+      } else if (['+', '-', '*', '/'].includes(key)) {
+         displayOnCalculator(key);
+      } else if (key === 'Enter' || key === '=') {
+         event.preventDefault();
+         makeOperation();
+      } else if (key === 'Backspace') {
+         clearNumber();
+      } else if (key === 'Escape' || key === 'c'){
+         clearCalculator();
+      } else if (key === '.' || key ===',') {
+         displayOnCalculator('.');
+      }
+   });
 }
 export default initCalculator;
