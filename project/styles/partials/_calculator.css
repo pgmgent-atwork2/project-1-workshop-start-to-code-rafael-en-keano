@@ -43,6 +43,13 @@
          width: var(--spacing-xl);
          height: var(--spacing-xl);
          cursor: pointer;
+
+         transition: all .5s ease-in-out;
+
+         &:hover { 
+            scale: 0.95; 
+            box-shadow: none;
+         }
       }
    }
 }

@@ -14,32 +14,33 @@
       <section>
         <article class="calculator">
           <div class="calculator__display">
-            111 
+            <p class="calculator__operation" data-display="operation"></p>
+            <p class="calculator__result" data-display="result"></p>
           </div>
 
-          <div class="calculator__buttons" data-animation="click-buttons">
-            <button type="button" onclick="display('CE')">CE</button>
-            <button type="button" onclick="display(':')">:</button>
-            <button type="button" onclick="display('X')">X</button>
-            <button type="button" onclick="display('C')">C</button>
+          <div class="calculator__buttons">
+            <button type="button" data-button-type="clearDisplay">CE</button>
+            <button type="button" data-button-type="operator">/</button>
+            <button type="button" data-button-type="operator">*</button>
+            <button type="button" data-button-type="clearNumber">C</button>
 
-            <button type="button" onclick="display('7')">7</button>
-            <button type="button" onclick="display('8')">8</button>
-            <button type="button" onclick="display('9')">9</button>
-            <button type="button" onclick="display('+')">+</button>
+            <button type="button" data-button-type="number">7</button>
+            <button type="button" data-button-type="number">8</button>
+            <button type="button" data-button-type="number">9</button>
+            <button type="button" data-button-type="operator">+</button>
 
-            <button type="button" onclick="display('4')">4</button>
-            <button type="button" onclick="display('5')">5</button>
-            <button type="button" onclick="display('6')">6</button>
-            <button type="button" onclick="display('-')">-</button>
+            <button type="button" data-button-type="number">4</button>
+            <button type="button" data-button-type="number">5</button>
+            <button type="button" data-button-type="number">6</button>
+            <button type="button" data-button-type="operator">-</button>
 
-            <button type="button" onclick="display('1')">1</button>
-            <button type="button" onclick="display('2')">2</button>
-            <button type="button" onclick="display('3')">3</button>
-            <button type="button" onclick="display('=')">=</button>
+            <button type="button" data-button-type="number">1</button>
+            <button type="button" data-button-type="number">2</button>
+            <button type="button" data-button-type="number">3</button>
+            <button type="button" data-button-type="equals">=</button>
 
-            <button type="button" onclick="display('0')">0</button>
-            <button type="button" onclick="display(',')">,</button>
+            <button type="button" data-button-type="number">0</button>
+            <button type="button" data-button-type="number">.</button>
           </div>
         </article>
 
@@ -49,6 +50,6 @@
 
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
