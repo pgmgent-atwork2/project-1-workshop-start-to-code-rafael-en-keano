@@ -1,21 +1,19 @@
 @import url("./base/_reset.css");
-@import url('./abstracts/_variables.css');
-@import url('./components/_title.css');
-@import url('./partials/_calculator.css');
-
-
-.container { 
-   max-width: var(--max-container-width);
-}
-
-.container--center { 
-   margin: 0 auto;
-}
+@import url("./partials/_calculator.css");
 
 body { 
-   font-family: var(--font-main);
-   color: var(--text-color);
+   color: #f9fafb;
+   font-family: Lato;
 
-   line-height: 1.6;
-   font-size: var(--font-size-sm);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+   background: #0f172a;
+}
+
+.container { 
+   width: 100%;
+   height: fit-content;
 }

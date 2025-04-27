@@ -1,54 +1,65 @@
 .calculator { 
    display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr;
-   gap: var(--spacing-xs);
-   
-   width: calc(20rem - var(--spacing-xs));
-   padding: var(--spacing-xs);
+   grid-template-columns: 1fr; 
+   grid-template-rows: .75fr 1fr;
+
+   padding: 1rem;
    margin: 0 auto;
+   border-radius: 2rem;
 
-   border-radius: var(--border-radius-xl);
-   background-color: var(--accent-color);
+   width: 20rem;
 
-   .calculator__display {
+   box-shadow: 10px 10px 20px hsla(0, 0%, 0%, 0.5);
+   background-color: hsl(215, 28%, 17%);
+
+   .calculator__display { 
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: .75fr .25fr;
-      
-      height: 100%;
-      width: 100%;
+      grid-template-rows: .95fr .05fr;
+      padding: 1rem;
 
-      padding: var(--spacing-xs);
+      .calculator__operation { 
+         word-break: break-word;
+         overflow-wrap: break-word;
+         white-space: normal;       
+      }
 
-      border-radius: var(--border-radius-lg);
-      background-color: var(--white);
+      .calculator__result { 
+         font-size: 2rem;
+
+         text-align: right;
+      }
+
+      border-radius: 1rem;
+      background-color: hsl(220, 19%, 27%);
    }
 
    .calculator__buttons { 
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
-      gap: var(--spacing-xs);
-
-      align-items: center;
       justify-items: center;
+      gap: .75rem;
 
-      & > button { 
-         background-color: rgba(255, 255, 255, 0.5);
-         box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.5);
+      margin-top: 1rem;
+
+      & button { 
+         color: white;
          border: none;
-         border-radius: var(--border-radius-rounded);
 
-         width: var(--spacing-xl);
-         height: var(--spacing-xl);
-         cursor: pointer;
+         width: 3rem;
+         height: 3rem;
 
-         transition: all .5s ease-in-out;
+         transition: all .35s ease-in-out;
+
+         border-radius: 50%;
+         box-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.5);
+         background-color: hsl(220, 14%, 34%);
 
          &:hover { 
-            scale: 0.95; 
+            scale: 0.90;
             box-shadow: none;
+            background-color: hsl(217, 61%, 71%);
          }
       }
    }
