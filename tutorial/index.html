@@ -1,64 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial basic rekenmachine</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial basic rekenmachine</title>
 
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-    <header class="container container--center">
-      <h1 class="title title--center title--big">Basic Rekenmachine</h1>
-      <p>
-        In deze tutorial leer je stap voor stap hoe je een eenvoudige rekenmachine kunt programmeren met behulp van HTML, CSS en JavaScript. 
-        Deze gids is speciaal bedoeld voor beginners die interesse hebben in webontwikkeling en graag hun eerste interactieve project willen bouwen.
-        We behandelen de basisprincipes van elk van deze drie webtalen en tonen je hoe ze samenwerken om een functionele rekenmachine te creëren. 
-        Daarnaast delen we handige tips en tricks die je kunt toepassen om je project uit te breiden of te verbeteren.
-        Of je nu volledig nieuw bent of al wat basiskennis hebt. Aan het einde van deze tutorial heb je een werkende rekenmachine en een beter begrip van front-end ontwikkeling.
-      </p>
-    </header>
-    <main>
-      <section class="container container--center">
-        <img src="./images/calculator.png" alt="Screenshot van de rekenmachine">
-        <p>Voor deze rekenmachine gebruiken we deze drie codetalen:</p>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </section>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 
-      <section class="container container--center">
-        <h2>Wat zijn HTML, CSS en JavaScript?</h2>
-        <p><strong>HTML (HyperText Markup Language)</strong> zorgt voor de structuur van een webpagina. Denk hierbij aan kopjes, tekstvakken, knoppen en afbeeldingen.</p>
-        <p><strong>CSS (Cascading Style Sheets)</strong> bepaalt hoe de pagina eruitziet. Met CSS kun je kleuren, lettertypes, marges en layout instellen, zodat alles er mooi uitziet.</p>
-        <p><strong>JavaScript</strong> maakt je pagina interactief. Dankzij JavaScript kunnen gebruikers bijvoorbeeld rekenen met je rekenmachine, knoppen indrukken of gegevens invoeren.</p>
-        <p>Door deze drie technologieën samen te gebruiken, bouwen we een mooie en werkende rekenmachine!</p>
-      </section>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
 
-      <section>
-        <h2>STAP 1 - Codeprogramma downloaden</h2>
-        <p>Om deze rekenmachine te coderen gebruiken we het programma <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>.</p>
+<body>
+<header class="container container--center">
+  <h1 class="title title--center title--big">Basic Rekenmachine</h1>
+  <p>
+    In deze tutorial leer je stap voor stap hoe je een eenvoudige rekenmachine kunt bouwen met behulp van HTML, CSS en JavaScript. 
+    Deze gids is speciaal bedoeld voor beginners die willen starten met webontwikkeling en graag hun eerste interactieve project willen maken. 
+    Je leert de basisprincipes van deze drie webtalen en hoe ze samenwerken om een functionele rekenmachine te creëren. 
+    Daarnaast krijg je handige tips en ideeën om je project verder uit te breiden. 
+    Aan het einde van deze tutorial heb je een werkende rekenmachine én een beter begrip van front-end ontwikkeling.
+  </p>
+</header>
 
-        <h2>STAP 2 - Mappenstructuur</h2>
-        <p>Op je bureaublad maak je een nieuwe map aan met de naam <strong>calculator</strong>.</p>
-        <img src="./images/mappenstructuur.png" alt="Screenshot van de mappenstructuur op het bureaublad">
+<main>
+  <section class="container container--center">
+    <img src="./images/calculator.png" alt="Screenshot van de rekenmachine">
+    <p>Voor dit project gebruiken we de volgende drie webtechnologieën:</p>
+    <ul>
+      <li><strong>HTML</strong></li>
+      <li><strong>CSS</strong></li>
+      <li><strong>JavaScript</strong></li>
+    </ul>
+  </section>
 
-        <h2>STAP 3 - Openen van Visual Studio Code en bestandenstructuur aanmaken</h2>
-        <p>Open het programma Visual Studio Code en open via 'Open Folder' de map die je net hebt aangemaakt.</p>
-        <img src="./images/studiocode.png" alt="Screenshot van het openen van een folder in Visual Studio Code">
+  <section class="container container--center">
+    <h2>Wat zijn HTML, CSS en JavaScript?</h2>
+    <p><strong>HTML (HyperText Markup Language)</strong> vormt de structuur van je webpagina, zoals kopjes, knoppen en tekstvelden.</p>
+    <p><strong>CSS (Cascading Style Sheets)</strong> zorgt voor de opmaak: kleuren, lettertypes, marges en layout.</p>
+    <p><strong>JavaScript</strong> maakt je webpagina interactief. Hiermee kunnen gebruikers bijvoorbeeld rekenen of op knoppen klikken.</p>
+    <p>Door deze drie talen samen te gebruiken, bouwen we een stijlvolle én werkende rekenmachine.</p>
+  </section>
 
-        <p>Daarna bouw je onderstaande mappen- en bestandenstructuur zoals te zien is in deze screenshot:</p>
-        <img src="./images/bestandenstructuur.png" alt="Screenshot van de mappen- en bestandenstructuur">
-      </section>
-    </main>
-    <footer>
+  <section>
+    <h2>Stap 1 – Code-editor downloaden</h2>
+    <p>Voor deze tutorial gebruiken we <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>.</p>
 
-    </footer>
-  </body>
+    <h2>Stap 2 – Mappenstructuur aanmaken</h2>
+    <p>Maak op je bureaublad een nieuwe map aan met de naam <strong>calculator</strong>.</p>
+    <img src="./images/mappenstructuur.png" alt="Screenshot van de mappenstructuur op het bureaublad">
+
+    <h2>Stap 3 – Visual Studio Code openen</h2>
+    <p>Open Visual Studio Code en kies <em>‘Open Folder’</em> om je nieuwe map te openen.</p>
+    <img src="./images/studiocode.png" alt="Screenshot van het openen van een folder in Visual Studio Code">
+
+    <p>Maak vervolgens de onderstaande mappen- en bestandenstructuur aan:</p>
+    <img src="./images/bestandenstructuur.png" alt="Screenshot van de mappen- en bestandenstructuur">
+  </section>
+
+  <section>
+    <h2>Stap 4 – HTML opzetten</h2>
+    <p>Kopieer de onderstaande HTML-code en plak deze in je bestand <code>index.html</code>:</p>
+    <iframe width="100%" height="400" src="https://jsfiddle.net/67uo01kt/1/embedded/html" allowfullscreen frameborder="0"></iframe>
+  </section>
+
+  <section>
+    <h2>Stap 5 – CSS toevoegen</h2>
+
+    <h3>5.1 – CSS-mappenstructuur</h3>
+    <p>Maak binnen de map <code>styles</code> extra submappen en bestanden zoals hieronder:</p>
+    <img src="./images/submappen_styles.png" alt="Screenshot van extra submappen voor CSS">
+
+    <h3>5.2 – _calculator.css</h3>
+    <p>Plaats deze CSS-code in het bestand <code>_calculator.css</code>:</p>
+    <iframe src="https://jsfiddle.net/67uo01kt/2/embedded/css" allowfullscreen frameborder="0"></iframe>
+
+    <h3>5.3 – main.css</h3>
+    <p>En dit hoort in <code>main.css</code>:</p>
+    <iframe src="https://jsfiddle.net/67uo01kt/4/embedded/css" allowfullscreen frameborder="0"></iframe>
+  </section>
+
+  <section>
+    <h2>Stap 6 – JavaScript schrijven</h2>
+    <p>Nu we de HTML en CSS hebben afgerond, gaan we de logica toevoegen met JavaScript.</p>
+
+    <h3>6.1 – calculator.js</h3>
+    <p>Maak in de map <code>components</code> een nieuw bestand <code>calculator.js</code> aan en plak hierin de volgende code:</p>
+    <iframe src="https://jsfiddle.net/67uo01kt/5/embedded/js" allowfullscreen frameborder="0"></iframe>
+
+    <h3>6.2 – main.js</h3>
+    <p>Als laatste voeg je deze code toe aan <code>main.js</code>. Hiermee activeer je de functies van de rekenmachine:</p>
+    <iframe src="https://jsfiddle.net/67uo01kt/6/embedded/js" allowfullscreen frameborder="0"></iframe>
+  </section>
+</main>
+
+  <footer>
+
+  </footer>
+</body>
+
 </html>
