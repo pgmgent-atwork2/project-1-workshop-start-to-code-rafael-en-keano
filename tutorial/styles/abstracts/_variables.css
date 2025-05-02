@@ -1,0 +1,18 @@
+:root {
+   /* Color Scheme */
+   --color-bg: #121212;
+   --color-surface: #1e1e1e;
+   --color-primary: #ff9800;
+   --color-primary-light: #ffb74d;
+   --color-text: #f5f5f5;
+   --color-alert: #ff5252;
+   
+   /* Spacing */
+   --spacing-xs: 0.5rem;
+   --spacing-sm: 1rem;
+   --spacing-md: 1.5rem;
+   --spacing-lg: 2rem;
+   
+   /* Border radius */
+   --border-radius: 0.5rem;
+}

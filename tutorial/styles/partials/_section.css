@@ -1,0 +1,44 @@
+.section { 
+   width: 95%;
+   margin: 0 auto;
+   padding: var(--spacing-md) 0;
+
+   border-bottom: 2px solid var(--color-primary);
+
+   .section__header { 
+      padding-bottom: var(--spacing-lg);
+
+      .section__title { 
+         margin: 0 auto var(--spacing-md) 0;
+         color: var(--color-primary);
+      }
+
+      .section__description { 
+         width: fit-content;
+         max-width: 64rem;
+      }
+   }
+
+   .section__content { 
+      max-width: 64rem;
+      
+      .section__image { 
+         width: 100%;
+         max-width: 30rem;
+         
+         padding: var(--spacing-sm);
+
+         border-radius: var(--border-radius);
+         background-color: var(--color-bg);
+      }
+
+      p { 
+         padding-block: var(--spacing-sm);
+      }
+   }
+
+   .section__footer { 
+      padding-top: var(--spacing-sm);
+      margin-top: var(--spacing-sm);
+   }
+}

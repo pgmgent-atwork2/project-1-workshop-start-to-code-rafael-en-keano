@@ -1,0 +1,7 @@
+.codebox { 
+   margin: var(--spacing-md) auto;
+   width: 100%;
+   max-width: 64rem;
+
+   height: 30rem;
+}

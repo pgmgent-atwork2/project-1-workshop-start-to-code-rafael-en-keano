@@ -1,23 +1,11 @@
 @import url("./base/_reset.css");
-
-:root {
-   /* Color Scheme */
-   --color-bg: #121212;
-   --color-surface: #1e1e1e;
-   --color-primary: #ff9800;
-   --color-primary-light: #ffb74d;
-   --color-text: #f5f5f5;
-   --color-alert: #ff5252;
-   
-   /* Spacing */
-   --spacing-xs: 0.5rem;
-   --spacing-sm: 1rem;
-   --spacing-md: 1.5rem;
-   --spacing-lg: 2rem;
-   
-   /* Border radius */
-   --border-radius: 0.5rem;
-}
+@import url("./abstracts/_variables.css");
+@import url("./partials/_header.css");
+@import url("./components/_nav.css");
+@import url("./partials/_section.css");
+@import url("./components/_codebox.css");
+@import url("./components/_code.css");
+@import url("./components/_alert.css");
 
 body { 
    font-family: 'Inter', system-ui, sans-serif;
@@ -42,36 +30,6 @@ body {
    }
 }
 
-.header {
-   margin: 0 auto;
-   padding: var(--spacing-sm) 0;
-   border-bottom: 2px solid var(--color-primary);
-   background-color: var(--color-surface);
-   
-   .header__title { 
-      text-align: center;
-      width: fit-content;
-      padding: var(--spacing-md) 0 var(--spacing-xs) 0;
-      margin: 0 auto;
-      color: var(--color-primary);
-      font-size: 1.8rem;
-   }
-
-   .header__image { 
-      width: 100%;
-      max-width: 64rem;
-      margin: 0 auto;
-      padding: var(--spacing-sm);
-      border-radius: var(--border-radius);
-      background-color: var(--color-bg);
-   }
-
-   .header__introduction { 
-      width: 95%;
-      margin: 0 auto;
-   }
-}
-
 .main { 
    margin: 0 auto;
    padding: var(--spacing-sm) 0;
@@ -90,139 +48,4 @@ body {
       color: var(--color-primary);
       font-size: 1.8rem;
    }
-}
-
-.nav { 
-   .nav__title { 
-      text-align: center;
-      width: fit-content;
-      margin: var(--spacing-md) auto var(--spacing-xs) auto;
-      
-      color: var(--color-primary);
-   }
-   
-   .nav__list { 
-      width: 90%;
-   
-      display: flex;
-      flex-direction: column;
-      gap: var(--spacing-sm);
-   
-      padding: 0;
-      margin: var(--spacing-md) auto;
-   
-      list-style-type: none;
-
-      .nav__item { 
-         width: 100%;
-         height: 3rem;
-         border-radius: var(--border-radius);
-         background-color: rgba(255, 255, 255, 0.05);
-      
-         display: flex;
-         justify-content: center;
-         align-items: center;
-      
-         transition: all 0.2s ease-in-out;
-
-         &:hover { 
-            background-color: rgba(255, 152, 0, 0.2);
-            border-left: 3px solid var(--color-primary);
-            transform: translateX(5px);
-         }
-
-         .nav__link { 
-            color: var(--color-text);
-            font-size: 1.1rem;
-            text-decoration: none;
-         
-            width: 100%;
-            height: 100%;
-         
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-      } 
-   
-      @media (min-width: 48rem) {
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: var(--spacing-md);
-      
-            .nav__item {
-               width: 10rem;
-            }
-      }
-
-      @media (min-width: 64rem) {
-         justify-content: space-between;
-         flex-wrap: nowrap;
-      }
-   }
-}
-
-.section { 
-   width: 95%;
-   margin: 0 auto;
-   padding: var(--spacing-md) 0;
-
-   border-bottom: 2px solid var(--color-primary);
-
-   .section__header { 
-      padding-bottom: var(--spacing-lg);
-
-      .section__title { 
-         margin: 0 auto var(--spacing-md) 0;
-         color: var(--color-primary);
-      }
-
-      .section__description { 
-         width: fit-content;
-         max-width: 64rem;
-      }
-   }
-
-   .section__content { 
-      max-width: 64rem;
-      
-      .section__image { 
-         width: 100%;
-         max-width: 30rem;
-         
-         padding: var(--spacing-sm);
-
-         border-radius: var(--border-radius);
-         background-color: var(--color-bg);
-      }
-
-      p { 
-         padding-block: var(--spacing-sm);
-      }
-   }
-
-   .section__footer { 
-      padding-top: var(--spacing-sm);
-      margin-top: var(--spacing-sm);
-   }
-}
-
-.codebox { 
-   margin: var(--spacing-md) auto;
-   width: 100%;
-   max-width: 64rem;
-
-   height: 30rem;
-}
-
-.code { 
-   color: var(--color-primary);
-}
-
-.alert { 
-   display: block;
-   width: 100%;
-
-   color: var(--color-alert);
 }
