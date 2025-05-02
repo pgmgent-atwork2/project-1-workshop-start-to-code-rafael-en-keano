@@ -1,19 +1,51 @@
 @import url("./base/_reset.css");
-@import url("./partials/_calculator.css");
+@import url("./abstracts/_variables.css");
+@import url("./partials/_header.css");
+@import url("./components/_nav.css");
+@import url("./partials/_section.css");
+@import url("./components/_codebox.css");
+@import url("./components/_code.css");
+@import url("./components/_alert.css");
 
 body { 
-   color: #f9fafb;
-   font-family: Lato;
+   font-family: 'Inter', system-ui, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   color: var(--color-text);
+   background-color: var(--color-bg);
+   
+   a { 
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+      &:hover { 
+         color: var(--color-primary-light);
+         text-decoration: underline;
+      }
+   }
 
-
-   background: #0f172a;
+   ul { 
+      padding: var(--spacing-xs) var(--spacing-md);
+   }
 }
 
-.container { 
-   width: 100%;
-   height: fit-content;
+.main { 
+   margin: 0 auto;
+   padding: var(--spacing-sm) 0;
+   border-bottom: 2px solid var(--color-primary);
+   background-color: var(--color-surface);
+   
+   .main__introduction { 
+      width: 95%;
+      margin: 0 auto;
+   }
+   
+   .main__title { 
+      width: fit-content;
+      padding: var(--spacing-md) 0 var(--spacing-xs) 0;
+      margin: 0 auto;
+      color: var(--color-primary);
+      font-size: 1.8rem;
+   }
 }

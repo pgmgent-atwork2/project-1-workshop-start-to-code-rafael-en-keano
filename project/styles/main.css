@@ -1,0 +1,19 @@
+@import url("./base/_reset.css");
+@import url("./partials/_calculator.css");
+
+body { 
+   color: #f9fafb;
+   font-family: Lato;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+   background: #0f172a;
+}
+
+.container { 
+   width: 100%;
+   height: fit-content;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic rekenmachine</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <article class="calculator">
+          <div class="calculator__display">
+            <p class="calculator__operation" data-display="operation"></p>
+            <p class="calculator__result" data-display="result"></p>
+          </div>
+
+          <div class="calculator__buttons">
+            <button type="button" data-button-type="clearDisplay">CE</button>
+            <button type="button" data-button-type="operator">/</button>
+            <button type="button" data-button-type="operator">*</button>
+            <button type="button" data-button-type="clearNumber">C</button>
+
+            <button type="button" data-button-type="number">7</button>
+            <button type="button" data-button-type="number">8</button>
+            <button type="button" data-button-type="number">9</button>
+            <button type="button" data-button-type="operator">+</button>
+
+            <button type="button" data-button-type="number">4</button>
+            <button type="button" data-button-type="number">5</button>
+            <button type="button" data-button-type="number">6</button>
+            <button type="button" data-button-type="operator">-</button>
+
+            <button type="button" data-button-type="number">1</button>
+            <button type="button" data-button-type="number">2</button>
+            <button type="button" data-button-type="number">3</button>
+            <button type="button" data-button-type="equals">=</button>
+
+            <button type="button" data-button-type="number">0</button>
+            <button type="button" data-button-type="number">.</button>
+          </div>
+        </article>
+
+      </section>
+    </main>
+    <footer>  
+
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
