@@ -16,6 +16,7 @@
     <header class="header">
       <div class="header__introduction">
         <h1 class="header__title">De basic rekenmachine</h1>
+        <img src="./images/calculator.png" alt="Screenshot van de rekenmachine" class="header__image">
         <p class="header__description">
           In deze tutorial leer je stap voor stap hoe je met HTML, CSS en JavaScript een eenvoudig werkende rekenmachine kunt maken. 
           Deze tutorial is bedoeld voor beginnende webontwikkelaars die hun eerste interactieve project willen bouwen.
@@ -210,21 +211,29 @@
           <p>
             We beginnen met het navigeren naar de map <span class="code">styles</span> dat we eerder hebben aangemaakt.
             Hier maken we een nieuw bestand aan: <span class="code">main.css</span>.
-            Vervolgens maken we een submap aan met de naam <span class="code">components</span>.
-            In deze map maken we een nieuw bestand aan met de naam <span class="code">_calculator.css</span>.
+            Vervolgens maken we een submap aan met de naam <span class="code">components</span> en een submap 
+            met de naam <span class="code">base</span>. 
+            <span class="alert">! Deze mappen bevinden zich op dezelfde hoogte in de map styles.</span>
+            In de map <span class="code">components</span> maken we een nieuw bestand aan met de naam <span class="code">_calculator.css</span>.
             <br>
-            main.css is het hoofdbestand dat bestand gebruiken we om de CSS te importeren die we in _calculator.css hebben geschreven.
-            _calculator.css is het bestand dat we gebruiken om de CSS voor de rekenmachine te schrijven.
+            Vervolgens download je het bestand <span class="code">_reset.css</span> door op deze link te duwen: <br>
+            <a href="./styles/base/_reset.css" download>download reset.css</a> <br>
+            Dit bestand zorgt ervoor dat de standaard opmaak van de browser wordt verwijderd.
+            Dit is belangrijk omdat elke browser zijn eigen standaard opmaak heeft en dit kan leiden tot inconsistenties in de weergave van de rekenmachine.
+            Plaats nu het bestand <span class="code">_reset.css</span> in de map <span class="code">base</span>.
             <br>
+            main.css is het hoofdbestand dat bestand gebruiken we om de CSS te importeren die we in _calculator.css en _reset.css hebben geschreven.*
             Dit is hoe de mappenstructuur er nu uitziet:
           </p>
           <img class="section__image" src="./images/css-mappenstructuur.png" alt="Screenshot van de CSS mappenstructuur">
           <p>
             zodra je dit hebt gedaan, open je het bestand <span class="code">main.css</span> in Visual Studio Code.
-            Hierin gaan we het css bestand importeren dat we in de submap hebben aangemaakt.
-            Dit doen we door de volgende regel code toe te voegen aan het begin van het bestand:
+            Hierin gaan we het css bestand importeren dat we in de submap hebben aangemaakt en de reset.css.
+            Dit doen we door de volgende regels code toe te voegen aan het begin van het bestand:
             <br>
-            <code class="code">@import './components/_calculator.css';</code>
+            <code class="code">@import './base/_reset.css';</code> <br>
+            <code class="code">@import './components/_calculator.css';</code> <br>
+            <span class="alert"> ! _reset.css moet altijd als eerste geïmporteerd worden!</span>
             <br>
             Nu is het tijd om de CSS voor de rekenmachine te schrijven.
             Dit doen we in het bestand <span class="code">_calculator.css</span> dat we eerder hebben aangemaakt.

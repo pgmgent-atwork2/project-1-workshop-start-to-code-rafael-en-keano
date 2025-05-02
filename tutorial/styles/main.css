@@ -48,11 +48,6 @@ body {
    border-bottom: 2px solid var(--color-primary);
    background-color: var(--color-surface);
    
-   .header__introduction { 
-      width: 95%;
-      margin: 0 auto;
-   }
-   
    .header__title { 
       text-align: center;
       width: fit-content;
@@ -60,6 +55,20 @@ body {
       margin: 0 auto;
       color: var(--color-primary);
       font-size: 1.8rem;
+   }
+
+   .header__image { 
+      width: 100%;
+      max-width: 64rem;
+      margin: 0 auto;
+      padding: var(--spacing-sm);
+      border-radius: var(--border-radius);
+      background-color: var(--color-bg);
+   }
+
+   .header__introduction { 
+      width: 95%;
+      margin: 0 auto;
    }
 }
 
