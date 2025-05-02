@@ -18,7 +18,6 @@ function clearNumber() {
    const displayText = $display.innerText;
    const newDisplayText = displayText.slice(0, -1);
    $display.innerText = newDisplayText;
-
 }
 
 function makeOperation() { 
